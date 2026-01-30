@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- HERO WRAPPER -->
+    <div class="relative h-screen overflow-hidden">
+
+        <!-- BACKGROUND IMAGE -->
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/cc73e7c7-7860-4ef4-8fc8-1baf24569d2f/web/IN-en-20260126-TRIFECTA-perspective_90d714e8-acc9-4253-ab46-ca6b349c1989_large.jpg"
+            class="absolute inset-0 w-full h-260 object-cover" alt="Netflix Background">
+
+        <!-- DARK + GRADIENT OVERLAY -->
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+
+        <!-- NAVBAR -->
+        <div class="relative z-10 flex items-center justify-between px-10 py-6">
+
+            <!-- LOGO -->
+            <svg viewBox="0 0 111 30" class="fill-red-600 w-36 translate-x-30">
+                <path
+                    d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                </path>
+            </svg>
+
+            <!-- RIGHT -->
+            <div class="flex items-center gap-4">
+                <div class="flex items-center border border-white/40 rounded px-2">
+                    <select class="bg-black text-white px-2 py-1 outline-none">
+                        <option>English</option>
+                        <option>हिन्दी</option>
+                    </select>
+                </div>
+
+                <button class="bg-red-600 px-4 py-1 rounded font-semibold hover:bg-red-700">
+                    Sign In
+                </button>
+            </div>
+        </div>
+
+        <!-- HERO CONTENT -->
+        <div class="relative z-10 flex flex-col items-center justify-center text-center px-3 h-full">
+
+
+            <h1 class="text-4xl md:text-6xl font-extrabold max-w-2xl leading-tight">
+                Unlimited movies, shows, and more
+            </h1>
+
+            <p class="text-lg md:text-xl mt-4">
+                Starts at ₹149. Cancel at any time.
+            </p>
+
+            <p class="mt-6 text-lg">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <div class="mt-6 flex flex-col md:flex-row gap-4 w-full max-w-xl">
+                <input type="email" placeholder="Email address"
+                    class="flex-1 px-4 py-4 rounded bg-black/60 border border-white/30 focus:outline-none" />
+
+                <button class="bg-red-600 px-6 py-4 rounded text-xl font-semibold hover:bg-red-700 transition">
+                    Get Started →
+                </button>
+            </div>
+        </div>
+
+        <!-- GLOW LAYER -->
+        <div class="absolute bottom-0 left-0 w-full h-[180px] translate-y-23
+    bg-gradient-to-t from-black via-[#0b1538] to-transparent
+    z-[5] pointer-events-none">
+        </div>
+
+        <!-- NETFLIX CURVE -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-40
+    w-[300%] h-[210px]
+    bg-black
+    rounded-[100%_100%_0_0]
+    border-t-[3px] border-pink-600
+    shadow-[0_-55px_120px_rgba(0,0,0,0.97)]
+    z-[6] pointer-events-none">
+        </div>
+
+
+
+
+
+
+    </div>
+    <div>
+        <h1 class="font-bold text-3xl pl-40 select-none">Trending Now</h1>
+    </div>
+<!-- Trending Row -->
+<!-- Trending Now Row -->
+<div class="flex overflow-x-auto gap-6 px-10 mt-10 select-none w-full">
+  
+  <!-- Item 1 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTk_B0l_BvDJ7CQuWOAax9ZKSAe65vFGUMjAee8pcvuYXDFDvcnFaF8nOEuwxBg-TFKzHTqhdD3D7zlMsXSpA_BQTHf-ouBVNdwJIJvNQzUGje4WVrnptKL5Ywqu9hV7pg3A.webp?r=f34"
+         alt="Taskaree">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      1
+    </span>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXMlNt8lRlEH5nkoYUHkzaYFsKJJvQq-3wQ4-DyYWQmKlxu9qrynyD5cNZEHPowiQL9IPEPbTSBM9B-id8nR8QPVfL1P_CQjPOqe5ZsDbekwH5AVJbhS3v4gSBXhZb4qdcE6.webp?r=e8a"
+         alt="Stranger Things">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      2
+    </span>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVbXUoTNkiWeGLsVtY9HIcuwl1a3-qGoR3UlqNqTqNaSBIYjd0DYeSO0mJcKaiMaH4AYtFRuqnHeuwcxSB3sofkfoh_zn_c9A80.webp?r=0e8"
+         alt="Tere Ishk Mein">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      3
+    </span>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV8y885z_biaHFzOnK0KRFhkNoyKYARfacGgsrezJNn5kYOvAfIDh4J02r4QkAELJzVWJnBu7aF45OyrVslCvEb0pK7vvMUb-tlPMEB8-rMJnpjGfCCaQoxzIWjciJoT851p.webp?r=dff"
+         alt="The Great Indian Kapil Show">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      4
+    </span>
+  </div>
+
+  <!-- Item 5 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVcKhe-O6i58rYdPRty0uDV5Nsc46HmqD7KkHaBZimN37XjpVzFMiDAIzpxnWhVFDD_TLRch9Jp5RjPfRc0QoEIprG103aUed4.webp?r=d3a"
+         alt="Champion">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      5
+    </span>
+  </div>
+
+  <!-- Item 6 -->
+  <div class="relative inline-block w-40 flex-shrink-0">
+    <img class="h-60 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out"
+         src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdN_bIOlvcPmuNg-8zb6yTEGzWwTEl5TQHxSGXeZYUZXD42PmzgOxe4XxfNs_FNWoKHZPwui2ZNbFkP6lW-cWNj7co2EHiAmQpBfdP3ty0noShRvad3MK4TOglaMWfLT3uCz.webp?r=c90"
+         alt="Bridgerton">
+    <span class="absolute -left-6 top-10 text-[70px] font-bold text-transparent drop-shadow-lg"
+          style="-webkit-text-stroke: 2px black;">
+      6
+    </span>
+  </div>
+
+</div>
+
+</body>
+
+</html>
